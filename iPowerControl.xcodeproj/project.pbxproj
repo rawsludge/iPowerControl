@@ -1,0 +1,762 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD28AC36199170DC000012E2 /* RadioManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CD28AC35199170DC000012E2 /* RadioManager.h */; };
+		CD28AC3819917184000012E2 /* RadioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CD28AC3719917184000012E2 /* RadioManager.m */; };
+		CD687F20199AFC8800FEA634 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD75DEBD199AFA7F001EC0A2 /* CoreTelephony.framework */; };
+		CD72AE9E1995AB56001A5435 /* iPCPreferenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD72AE9D1995AB56001A5435 /* iPCPreferenceController.m */; };
+		CD72AEBC1995B649001A5435 /* iPCListController.h in Headers */ = {isa = PBXBuildFile; fileRef = CD72AEBA1995B649001A5435 /* iPCListController.h */; };
+		CD72AEBD1995B649001A5435 /* iPCListController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD72AEBB1995B649001A5435 /* iPCListController.m */; };
+		CD75DEB2199AF091001EC0A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD75DEB1199AF091001EC0A2 /* Foundation.framework */; };
+		CD75DEB6199AF4AF001EC0A2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD75DEB5199AF4AF001EC0A2 /* UIKit.framework */; };
+		CD75DEB8199AF572001EC0A2 /* Preferences.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD75DEB7199AF572001EC0A2 /* Preferences.framework */; };
+		CD75DEBC199AF9F5001EC0A2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD75DEB5199AF4AF001EC0A2 /* UIKit.framework */; };
+		CD7CFEF51999B3AC00A1E776 /* iPCApplications.h in Headers */ = {isa = PBXBuildFile; fileRef = CD7CFEF31999B3AC00A1E776 /* iPCApplications.h */; };
+		CD7CFEF61999B3AC00A1E776 /* iPCApplications.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7CFEF41999B3AC00A1E776 /* iPCApplications.m */; };
+		CD7CFEF81999B8F600A1E776 /* libapplist.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CD7CFEF71999B8F600A1E776 /* libapplist.dylib */; };
+		CD86A1FA19915C5300D5FC4F /* iPowerControl.mm in Sources */ = {isa = PBXBuildFile; fileRef = CD86A1F919915C5300D5FC4F /* iPowerControl.mm */; };
+		CDAEB08C19924402008BFB2F /* Configuration.h in Headers */ = {isa = PBXBuildFile; fileRef = CDAEB08B19924402008BFB2F /* Configuration.h */; };
+		CDAEB08E1992446E008BFB2F /* Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = CDAEB08D1992446E008BFB2F /* Configuration.m */; };
+		CDD88F33199373DD0035CA39 /* libsubstrate.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CDAEB08F1992CC9B008BFB2F /* libsubstrate.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD72AEB11995AB61001A5435 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD86A1E119915C5300D5FC4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD72AE8F1995AB56001A5435;
+			remoteInfo = iPCPreference;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CD28AC35199170DC000012E2 /* RadioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioManager.h; sourceTree = "<group>"; };
+		CD28AC3719917184000012E2 /* RadioManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioManager.m; sourceTree = "<group>"; };
+		CD72AE6219959E20001A5435 /* iPowerControl.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPowerControl.plist; sourceTree = "<group>"; };
+		CD72AE901995AB56001A5435 /* iPCPreference.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iPCPreference.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD72AE981995AB56001A5435 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		CD72AE9A1995AB56001A5435 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		CD72AE9B1995AB56001A5435 /* iPCPreference-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iPCPreference-Info.plist"; sourceTree = "<group>"; };
+		CD72AE9C1995AB56001A5435 /* iPCPreferenceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iPCPreferenceController.h; sourceTree = "<group>"; };
+		CD72AE9D1995AB56001A5435 /* iPCPreferenceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iPCPreferenceController.m; sourceTree = "<group>"; };
+		CD72AEA21995AB56001A5435 /* iPCPreference.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = iPCPreference.plist; path = Package/Library/PreferenceLoader/Preferences/iPCPreference.plist; sourceTree = "<group>"; };
+		CD72AEA51995AB56001A5435 /* iPCPreference.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = iPCPreference.plist; path = Package/Library/PreferenceBundles/iPCPreference.bundle/iPCPreference.plist; sourceTree = "<group>"; };
+		CD72AEA61995AB56001A5435 /* iPCPreferenceIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iPCPreferenceIcon.png; path = Package/Library/PreferenceBundles/iPCPreference.bundle/iPCPreferenceIcon.png; sourceTree = "<group>"; };
+		CD72AEA71995AB56001A5435 /* iPCPreferenceIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPCPreferenceIcon@2x.png"; path = "Package/Library/PreferenceBundles/iPCPreference.bundle/iPCPreferenceIcon@2x.png"; sourceTree = "<group>"; };
+		CD72AEAC1995AB56001A5435 /* CanSoft.iPCPreference.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = CanSoft.iPCPreference.plist; path = Package/var/mobile/Library/Preferences/CanSoft.iPCPreference.plist; sourceTree = "<group>"; };
+		CD72AEAD1995AB56001A5435 /* iPCPreference-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iPCPreference-Prefix.pch"; sourceTree = "<group>"; };
+		CD72AEB71995B182001A5435 /* iPowerControl.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = iPowerControl.plist; path = Package/Library/PreferenceBundles/iPCPreference.bundle/iPowerControl.plist; sourceTree = "<group>"; };
+		CD72AEB81995B182001A5435 /* iPowerControl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iPowerControl.png; path = Package/Library/PreferenceBundles/iPCPreference.bundle/iPowerControl.png; sourceTree = "<group>"; };
+		CD72AEB91995B182001A5435 /* iPowerControl@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPowerControl@2x.png"; path = "Package/Library/PreferenceBundles/iPCPreference.bundle/iPowerControl@2x.png"; sourceTree = "<group>"; };
+		CD72AEBA1995B649001A5435 /* iPCListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPCListController.h; sourceTree = "<group>"; };
+		CD72AEBB1995B649001A5435 /* iPCListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iPCListController.m; sourceTree = "<group>"; };
+		CD72AEBE1995BA9A001A5435 /* ApplicationRules.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ApplicationRules.plist; path = Package/Library/PreferenceBundles/iPCPreference.bundle/ApplicationRules.plist; sourceTree = "<group>"; };
+		CD72AEBF19966780001A5435 /* WhenSleep.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = WhenSleep.plist; path = Package/Library/PreferenceBundles/iPCPreference.bundle/WhenSleep.plist; sourceTree = "<group>"; };
+		CD75DEB1199AF091001EC0A2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CD75DEB3199AF323001EC0A2 /* Preferences.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Preferences.framework; path = ../../../../../../../opt/iOSOpenDev/frameworks/Private/Preferences.framework; sourceTree = "<group>"; };
+		CD75DEB5199AF4AF001EC0A2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CD75DEB7199AF572001EC0A2 /* Preferences.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Preferences.framework; path = System/Library/PrivateFrameworks/Preferences.framework; sourceTree = SDKROOT; };
+		CD75DEBD199AFA7F001EC0A2 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		CD75DEC0199AFAFB001EC0A2 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		CD7CFEF31999B3AC00A1E776 /* iPCApplications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPCApplications.h; sourceTree = "<group>"; };
+		CD7CFEF41999B3AC00A1E776 /* iPCApplications.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iPCApplications.m; sourceTree = "<group>"; };
+		CD7CFEF71999B8F600A1E776 /* libapplist.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libapplist.dylib; path = ../../../../../../../opt/iOSOpenDev/lib/libapplist.dylib; sourceTree = "<group>"; };
+		CD86A1EB19915C5300D5FC4F /* iPowerControl.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = iPowerControl.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD86A1F419915C5300D5FC4F /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		CD86A1F619915C5300D5FC4F /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		CD86A1F719915C5300D5FC4F /* iPowerControl-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iPowerControl-Prefix.pch"; sourceTree = "<group>"; };
+		CD86A1F819915C5300D5FC4F /* iPowerControl.xm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = iPowerControl.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		CD86A1F919915C5300D5FC4F /* iPowerControl.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = iPowerControl.mm; sourceTree = "<group>"; };
+		CD86A1FE19915C5300D5FC4F /* iPowerControl.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = iPowerControl.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/iPowerControl.plist; sourceTree = "<group>"; };
+		CD8B45F419A829C50011A074 /* postinst */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = postinst; path = ../iPCPreference/postinst; sourceTree = "<group>"; };
+		CDAEB08B19924402008BFB2F /* Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Configuration.h; sourceTree = "<group>"; };
+		CDAEB08D1992446E008BFB2F /* Configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Configuration.m; sourceTree = "<group>"; };
+		CDAEB08F1992CC9B008BFB2F /* libsubstrate.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsubstrate.dylib; path = ../../../../../../../opt/iOSOpenDev/lib/libsubstrate.dylib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD72AE8C1995AB56001A5435 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD75DEB6199AF4AF001EC0A2 /* UIKit.framework in Frameworks */,
+				CD75DEB2199AF091001EC0A2 /* Foundation.framework in Frameworks */,
+				CD75DEB8199AF572001EC0A2 /* Preferences.framework in Frameworks */,
+				CD7CFEF81999B8F600A1E776 /* libapplist.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD86A1E719915C5300D5FC4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD687F20199AFC8800FEA634 /* CoreTelephony.framework in Frameworks */,
+				CD75DEBC199AF9F5001EC0A2 /* UIKit.framework in Frameworks */,
+				CDD88F33199373DD0035CA39 /* libsubstrate.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD72AE941995AB56001A5435 /* iPCPreference */ = {
+			isa = PBXGroup;
+			children = (
+				CD72AE9C1995AB56001A5435 /* iPCPreferenceController.h */,
+				CD72AE9D1995AB56001A5435 /* iPCPreferenceController.m */,
+				CD72AE951995AB56001A5435 /* Package */,
+				CD72AE991995AB56001A5435 /* Supporting Files */,
+				CD72AEBA1995B649001A5435 /* iPCListController.h */,
+				CD72AEBB1995B649001A5435 /* iPCListController.m */,
+				CD7CFEF31999B3AC00A1E776 /* iPCApplications.h */,
+				CD7CFEF41999B3AC00A1E776 /* iPCApplications.m */,
+			);
+			path = iPCPreference;
+			sourceTree = "<group>";
+		};
+		CD72AE951995AB56001A5435 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				CD72AE961995AB56001A5435 /* DEBIAN */,
+				CD72AE9F1995AB56001A5435 /* Library */,
+				CD72AEA81995AB56001A5435 /* var */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		CD72AE961995AB56001A5435 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				CD72AE981995AB56001A5435 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		CD72AE991995AB56001A5435 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD72AE9A1995AB56001A5435 /* PackageVersion.plist */,
+				CD72AE9B1995AB56001A5435 /* iPCPreference-Info.plist */,
+				CD72AEAD1995AB56001A5435 /* iPCPreference-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD72AE9F1995AB56001A5435 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				CD72AEA01995AB56001A5435 /* PreferenceLoader */,
+				CD72AEA31995AB56001A5435 /* PreferenceBundles */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		CD72AEA01995AB56001A5435 /* PreferenceLoader */ = {
+			isa = PBXGroup;
+			children = (
+				CD72AEA11995AB56001A5435 /* Preferences */,
+			);
+			name = PreferenceLoader;
+			sourceTree = "<group>";
+		};
+		CD72AEA11995AB56001A5435 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				CD72AEA21995AB56001A5435 /* iPCPreference.plist */,
+			);
+			name = Preferences;
+			sourceTree = "<group>";
+		};
+		CD72AEA31995AB56001A5435 /* PreferenceBundles */ = {
+			isa = PBXGroup;
+			children = (
+				CD72AEA41995AB56001A5435 /* ___PACKAGENAME___.bundle */,
+			);
+			name = PreferenceBundles;
+			sourceTree = "<group>";
+		};
+		CD72AEA41995AB56001A5435 /* ___PACKAGENAME___.bundle */ = {
+			isa = PBXGroup;
+			children = (
+				CD72AEA51995AB56001A5435 /* iPCPreference.plist */,
+				CD72AEA61995AB56001A5435 /* iPCPreferenceIcon.png */,
+				CD72AEA71995AB56001A5435 /* iPCPreferenceIcon@2x.png */,
+			);
+			name = "___PACKAGENAME___.bundle";
+			sourceTree = "<group>";
+		};
+		CD72AEA81995AB56001A5435 /* var */ = {
+			isa = PBXGroup;
+			children = (
+				CD72AEA91995AB56001A5435 /* mobile */,
+			);
+			name = var;
+			sourceTree = "<group>";
+		};
+		CD72AEA91995AB56001A5435 /* mobile */ = {
+			isa = PBXGroup;
+			children = (
+				CD72AEAA1995AB56001A5435 /* Library */,
+			);
+			name = mobile;
+			sourceTree = "<group>";
+		};
+		CD72AEAA1995AB56001A5435 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				CD72AEAB1995AB56001A5435 /* Preferences */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		CD72AEAB1995AB56001A5435 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				CD72AEAC1995AB56001A5435 /* CanSoft.iPCPreference.plist */,
+			);
+			name = Preferences;
+			sourceTree = "<group>";
+		};
+		CD72AEB31995ABDB001A5435 /* iPCPreference.bundle */ = {
+			isa = PBXGroup;
+			children = (
+				CD72AEBF19966780001A5435 /* WhenSleep.plist */,
+				CD72AEBE1995BA9A001A5435 /* ApplicationRules.plist */,
+				CD72AEB71995B182001A5435 /* iPowerControl.plist */,
+				CD72AEB81995B182001A5435 /* iPowerControl.png */,
+				CD72AEB91995B182001A5435 /* iPowerControl@2x.png */,
+			);
+			name = iPCPreference.bundle;
+			sourceTree = "<group>";
+		};
+		CD7BCFF21994F61E009CD63A /* PreferenceLoader */ = {
+			isa = PBXGroup;
+			children = (
+				CD7BCFF31994F61E009CD63A /* Preferences */,
+			);
+			name = PreferenceLoader;
+			path = Package/Library/PreferenceLoader;
+			sourceTree = "<group>";
+		};
+		CD7BCFF31994F61E009CD63A /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				CD72AE6219959E20001A5435 /* iPowerControl.plist */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
+		CD86A1E019915C5300D5FC4F = {
+			isa = PBXGroup;
+			children = (
+				CD86A1F019915C5300D5FC4F /* iPowerControl */,
+				CD72AE941995AB56001A5435 /* iPCPreference */,
+				CD86A1ED19915C5300D5FC4F /* Frameworks */,
+				CD86A1EC19915C5300D5FC4F /* Products */,
+			);
+			sourceTree = "<group>";
+			wrapsLines = 0;
+		};
+		CD86A1EC19915C5300D5FC4F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD86A1EB19915C5300D5FC4F /* iPowerControl.dylib */,
+				CD72AE901995AB56001A5435 /* iPCPreference.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD86A1ED19915C5300D5FC4F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD75DEC0199AFAFB001EC0A2 /* CoreFoundation.framework */,
+				CD75DEBD199AFA7F001EC0A2 /* CoreTelephony.framework */,
+				CD75DEB7199AF572001EC0A2 /* Preferences.framework */,
+				CD75DEB5199AF4AF001EC0A2 /* UIKit.framework */,
+				CD75DEB3199AF323001EC0A2 /* Preferences.framework */,
+				CD75DEB1199AF091001EC0A2 /* Foundation.framework */,
+				CD7CFEF71999B8F600A1E776 /* libapplist.dylib */,
+				CDAEB08F1992CC9B008BFB2F /* libsubstrate.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD86A1F019915C5300D5FC4F /* iPowerControl */ = {
+			isa = PBXGroup;
+			children = (
+				CDBE22371993E29200CEBB9A /* RadioManager */,
+				CD86A1F819915C5300D5FC4F /* iPowerControl.xm */,
+				CD86A1F919915C5300D5FC4F /* iPowerControl.mm */,
+				CD86A1F119915C5300D5FC4F /* Package */,
+				CD86A1F519915C5300D5FC4F /* Supporting Files */,
+				CDAEB08B19924402008BFB2F /* Configuration.h */,
+				CDAEB08D1992446E008BFB2F /* Configuration.m */,
+			);
+			path = iPowerControl;
+			sourceTree = "<group>";
+		};
+		CD86A1F119915C5300D5FC4F /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				CD86A1F219915C5300D5FC4F /* DEBIAN */,
+				CD86A1FB19915C5300D5FC4F /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		CD86A1F219915C5300D5FC4F /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				CD8B45F419A829C50011A074 /* postinst */,
+				CD86A1F419915C5300D5FC4F /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		CD86A1F519915C5300D5FC4F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD86A1F619915C5300D5FC4F /* PackageVersion.plist */,
+				CD86A1F719915C5300D5FC4F /* iPowerControl-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD86A1FB19915C5300D5FC4F /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				CDAFA04619957E6E003CAD00 /* PreferenceBundles */,
+				CD7BCFF21994F61E009CD63A /* PreferenceLoader */,
+				CD86A1FC19915C5300D5FC4F /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		CD86A1FC19915C5300D5FC4F /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				CD86A1FD19915C5300D5FC4F /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		CD86A1FD19915C5300D5FC4F /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				CD86A1FE19915C5300D5FC4F /* iPowerControl.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+		CDAFA04619957E6E003CAD00 /* PreferenceBundles */ = {
+			isa = PBXGroup;
+			children = (
+				CD72AEB31995ABDB001A5435 /* iPCPreference.bundle */,
+			);
+			name = PreferenceBundles;
+			sourceTree = "<group>";
+		};
+		CDBE22371993E29200CEBB9A /* RadioManager */ = {
+			isa = PBXGroup;
+			children = (
+				CD28AC35199170DC000012E2 /* RadioManager.h */,
+				CD28AC3719917184000012E2 /* RadioManager.m */,
+			);
+			name = RadioManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CD72AE8D1995AB56001A5435 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD7CFEF51999B3AC00A1E776 /* iPCApplications.h in Headers */,
+				CD72AEBC1995B649001A5435 /* iPCListController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD86A1E819915C5300D5FC4F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD28AC36199170DC000012E2 /* RadioManager.h in Headers */,
+				CDAEB08C19924402008BFB2F /* Configuration.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CD72AE8F1995AB56001A5435 /* iPCPreference */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD72AEAE1995AB56001A5435 /* Build configuration list for PBXNativeTarget "iPCPreference" */;
+			buildPhases = (
+				CD72AE8B1995AB56001A5435 /* Sources */,
+				CD72AE8C1995AB56001A5435 /* Frameworks */,
+				CD72AE8D1995AB56001A5435 /* Headers */,
+				CD72AE8E1995AB56001A5435 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iPCPreference;
+			productName = iPCPreference;
+			productReference = CD72AE901995AB56001A5435 /* iPCPreference.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		CD86A1EA19915C5300D5FC4F /* iPowerControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD86A20119915C5300D5FC4F /* Build configuration list for PBXNativeTarget "iPowerControl" */;
+			buildPhases = (
+				CD86A1E519915C5300D5FC4F /* ShellScript */,
+				CD86A1E619915C5300D5FC4F /* Sources */,
+				CD86A1E719915C5300D5FC4F /* Frameworks */,
+				CD86A1E819915C5300D5FC4F /* Headers */,
+				CD86A1E919915C5300D5FC4F /* Run Script */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD72AEB21995AB61001A5435 /* PBXTargetDependency */,
+			);
+			name = iPowerControl;
+			productName = iPowerControl;
+			productReference = CD86A1EB19915C5300D5FC4F /* iPowerControl.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD86A1E119915C5300D5FC4F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = CD86A1E419915C5300D5FC4F /* Build configuration list for PBXProject "iPowerControl" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CD86A1E019915C5300D5FC4F;
+			productRefGroup = CD86A1EC19915C5300D5FC4F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD86A1EA19915C5300D5FC4F /* iPowerControl */,
+				CD72AE8F1995AB56001A5435 /* iPCPreference */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CD72AE8E1995AB56001A5435 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+		CD86A1E519915C5300D5FC4F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp-logos";
+		};
+		CD86A1E919915C5300D5FC4F /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/bundle\n/opt/iOSOpenDev/bin/iosod --xcbp\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD72AE8B1995AB56001A5435 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD72AEBD1995B649001A5435 /* iPCListController.m in Sources */,
+				CD7CFEF61999B3AC00A1E776 /* iPCApplications.m in Sources */,
+				CD72AE9E1995AB56001A5435 /* iPCPreferenceController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD86A1E619915C5300D5FC4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD86A1FA19915C5300D5FC4F /* iPowerControl.mm in Sources */,
+				CDAEB08E1992446E008BFB2F /* Configuration.m in Sources */,
+				CD28AC3819917184000012E2 /* RadioManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD72AEB21995AB61001A5435 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD72AE8F1995AB56001A5435 /* iPCPreference */;
+			targetProxy = CD72AEB11995AB61001A5435 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CD72AEAF1995AB56001A5435 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+					"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+					/opt/iOSOpenDev/frameworks/Private,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iPCPreference/iPCPreference-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				INFOPLIST_FILE = "iPCPreference/iPCPreference-Info.plist";
+				INSTALL_PATH = /Library/PreferenceBundles;
+				LIBRARY_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/lib/**",
+					/opt/iOSOpenDev/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		CD72AEB01995AB56001A5435 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+					"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+					/opt/iOSOpenDev/frameworks/Private,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iPCPreference/iPCPreference-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				INFOPLIST_FILE = "iPCPreference/iPCPreference-Info.plist";
+				INSTALL_PATH = /Library/PreferenceBundles;
+				LIBRARY_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/lib/**",
+					/opt/iOSOpenDev/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+		CD86A1FF19915C5300D5FC4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/Frameworks",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_USE_STANDARD_INCLUDE_SEARCHING = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		CD86A20019915C5300D5FC4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/Frameworks",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_USE_STANDARD_INCLUDE_SEARCHING = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		CD86A20219915C5300D5FC4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/frameworks/Public,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iPowerControl/iPowerControl-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+					"$(PROJECT_DIR)/iPowerControl/Package/Library/MobileSubstrate/DynamicLibraries",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "ahmets-iphone.local";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		CD86A20319915C5300D5FC4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/frameworks/Public,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iPowerControl/iPowerControl-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+					"$(PROJECT_DIR)/iPowerControl/Package/Library/MobileSubstrate/DynamicLibraries",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "ahmets-iphone.local";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD72AEAE1995AB56001A5435 /* Build configuration list for PBXNativeTarget "iPCPreference" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD72AEAF1995AB56001A5435 /* Debug */,
+				CD72AEB01995AB56001A5435 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD86A1E419915C5300D5FC4F /* Build configuration list for PBXProject "iPowerControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD86A1FF19915C5300D5FC4F /* Debug */,
+				CD86A20019915C5300D5FC4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD86A20119915C5300D5FC4F /* Build configuration list for PBXNativeTarget "iPowerControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD86A20219915C5300D5FC4F /* Debug */,
+				CD86A20319915C5300D5FC4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD86A1E119915C5300D5FC4F /* Project object */;
+}

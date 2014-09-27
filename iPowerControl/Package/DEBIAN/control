@@ -1,0 +1,17 @@
+Package: CanSoft.iPowerControl
+Name: iPowerControl
+Version: 1.1-6
+Description: 
+Section: System
+Depends: firmware (>= 7.0), mobilesubstrate (>= 0.9.5000), preferenceloader, AppList
+Conflicts: 
+Replaces: 
+Priority: optional
+Architecture: iphoneos-arm
+Author: Ahmet ÖZTÜRK
+dev: 
+Homepage: 
+Depiction: 
+Maintainer: 
+Icon: 
+

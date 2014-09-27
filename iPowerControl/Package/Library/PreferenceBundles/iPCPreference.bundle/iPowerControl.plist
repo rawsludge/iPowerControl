@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>title</key>
+	<string>Power Control</string>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>isStaticText</key>
+			<true/>
+			<key>label</key>
+			<string>Power Control</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<string>NO</string>
+			<key>defaults</key>
+			<string>com.iPowerControl</string>
+			<key>key</key>
+			<string>enabled</string>
+			<key>label</key>
+			<string>Enabled</string>
+			<key>PostNotification</key>
+			<string>com.mobilim.iPowerControl/updated</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>isStaticText</key>
+			<true/>
+			<key>label</key>
+			<string>Rules</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkCell</string>
+			<key>isStaticText</key>
+			<true/>
+			<key>label</key>
+			<string>When sleep</string>
+			<key>isController</key>
+			<true/>
+			<key>detail</key>
+			<string>iPCListController</string>
+			<key>plistName</key>
+			<string>WhenSleep</string>
+			<key>settingsKey</key>
+			<string>whenSleep</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkCell</string>
+			<key>isStaticText</key>
+			<true/>
+			<key>label</key>
+			<string>Applications</string>
+			<key>isController</key>
+			<true/>
+			<key>detail</key>
+			<string>iPCApplications</string>
+			<key>plistName</key>
+			<string>ApplicationsRules</string>
+			<key>PostNotification</key>
+			<string>com.mobilim.iPowerControl/updated</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>isStaticText</key>
+			<true/>
+			<key>label</key>
+			<string>Switch off 3G &amp; Celluar data</string>
+			<key>footerText</key>
+			<string>Switch off 3G and celluar data when connected to WiFi. Wifi should be enabled to work properly. iPowerControl by Ahmet ÖZTÜRK, support:aozturk@mobilim.net</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>isStaticText</key>
+			<true/>
+			<key>label</key>
+			<string>When connected WiFi</string>
+			<key>key</key>
+			<string>closeData</string>
+			<key>PostNotification</key>
+			<string>com.mobilim.iPowerControl/updated</string>
+			<key>defaults</key>
+			<string>com.iPowerControl</string>
+		</dict>
+	</array>
+</dict>
+</plist>

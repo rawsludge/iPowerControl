@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>PowerControlPreference.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>iPCPreference.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>iPowerControl.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>CD0AA24D19958EA800442401</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CD72AE671995A0FD001A5435</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CD72AE8F1995AB56001A5435</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CD86A1EA19915C5300D5FC4F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,17 @@
+Package: CanSoft.iPCPreference
+Name: iPCPreference
+Version: 1.0-1
+Description: 
+Section: PreferenceBundles
+Depends: firmware (>= 7.0), mobilesubstrate (>= 0.9.5000), preferenceloader
+Conflicts: 
+Replaces: 
+Priority: optional
+Architecture: iphoneos-arm
+Author: Ahmet ÖZTÜRK
+dev: 
+Homepage: www.ahmetozturk.net.tr
+Depiction: 
+Maintainer: 
+Icon: 
+
